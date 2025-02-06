@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Header Image */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(to right, #00703C, #005B2C);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #FFCC33;
+}
+
+/* Content Styles */
+div {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+h1, h2 {
+    color: #00703C;
+    font-size: 2em;
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* List Styles */
+ol {
+    text-align: left;
+    margin:10px;
+    list-style-type: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+ol li {
+    justify-self: center;
+    background: #00703C;
+    width: 80%;
+    color: #FFCC33;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8cap;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+ol li:hover {
+    background: #005B2C;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #00703C;
+    color:#FFCC33;
+}
+
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: larger;
+    border-radius: 10cap;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    border-radius: 50%;
+  }
+  
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    div.content {
+        width: 90%;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}

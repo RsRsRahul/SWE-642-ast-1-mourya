@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Department Survey</title>
+    <style>
+        /* .required {
+            color: red;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="url"], input[type="tel"], input[type="date"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        } */
+    </style>
+    <link rel="stylesheet" href="Survey-csdpt.css">
+</head>
+<body>
+    <h1 style="border: 10cap color(  #00703C);">CS Department Survey</h1>
+    <form autocomplete="on">
+        <!-- Username -->
+        <label for="username">Username: <span class="required">*</span></label>
+        <input type="text" id="username" name="username" placeholder="Enter  username" required autofocus>
+
+        <!-- Address -->
+        <label for="street">Street Address: <span class="required">*</span></label>
+        <input type="text" id="street" name="street" placeholder="Enter your street address" required>
+
+        <label for="city">City: <span class="required">*</span></label>
+        <input type="text" id="city" name="city" placeholder="Enter your city" required>
+
+        <label for="state">State: <span class="required">*</span></label>
+        <input type="text" id="state" name="state" placeholder="Enter your state" required>
+
+        <label for="zip">Zip Code: <span class="required">*</span></label>
+        <input type="text" id="zip" name="zip" placeholder="Enter your zip code" required>
+
+        <!-- Contact Information -->
+        <label for="telephone">Mobile Number: <span class="required">*</span></label>
+        <input type="tel" id="telephone" name="telephone" placeholder="123-456-7890" required>
+
+        <label for="email">Email: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="name@something.com" required>
+
+        <label for="url">Personal URL:</label>
+        <input type="url" id="url" name="url" placeholder="https://googlee.com">
+
+        <!-- Date of Survey -->
+        <label for="date">Date of Survey: <span class="required">*</span></label>
+        <input type="date" id="date" name="date" required>
+
+        <!-- Checkboxes for Campus Likes -->
+        <label>What did you like most about the campus? <span class="required">*</span></label>
+        <label><input type="checkbox" name="likes" value="students"> Students</label>
+        <label><input type="checkbox" name="likes" value="location"> Location</label>
+        <label><input type="checkbox" name="likes" value="campus"> Campus</label>
+        <label><input type="checkbox" name="likes" value="atmosphere"> Atmosphere</label>
+        <label><input type="checkbox" name="likes" value="dorm_rooms"> Dorm Rooms</label>
+        <label><input type="checkbox" name="likes" value="sports"> Sports</label>
+
+        <!-- Radio Buttons for Interest -->
+        <label>How did you become interested in the university? <span class="required">*</span></label>
+        <label><input type="radio" name="interest" value="friends"> Friends</label>
+        <label><input type="radio" name="interest" value="television"> Television</label>
+        <label><input type="radio" name="interest" value="internet"> Internet</label>
+        <label><input type="radio" name="interest" value="other"> Other</label>
+
+        <!-- Text Area for Additional Comments -->
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here"></textarea>
+
+        <!-- High School Graduation Month and Year -->
+        <label for="grad_month">High School Graduation Month: <span class="required">*</span></label>
+        <input list="months" id="grad_month" name="grad_month" placeholder="Select month" required>
+        <datalist id="months">
+            <option value="January">
+            <option value="February">
+            <option value="March">
+            <option value="April">
+            <option value="May">
+            <option value="June">
+            <option value="July">
+            <option value="August">
+            <option value="September">
+            <option value="October">
+            <option value="November">
+            <option value="December">
+        </datalist>
+
+        <label for="grad_year">Graduation Year: <span class="required">*</span></label>
+        <input type="text" id="grad_year" name="grad_year" placeholder="Enter year (e.g., 2023)" required>
+
+        <!-- Dropdown for Recommendation Likelihood -->
+        <label for="recommend">How would you rate your likelihood of recommending this school to others?<span class="required">*</span></label>
+        <select id="recommend" name="recommend" required>
+            <option value="">Select an option</option>
+            <option value="very_likely">Very Likely</option>
+            <option value="likely">Likely</option>
+            <option value="unlikely">Unlikely</option>
+        </select>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Survey">
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.required {
+    color: red;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-color:#FFCC33;
+}
+input[type="text"], input[type="email"], input[type="url"], input[type="tel"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+
+}
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+body{
+    /* background-image: url(gmu\ form.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 50px;
+}
+h1{
+    {
+        color: #00703C;
+        font-size: 2em;
+        margin-bottom: 15px;
+}
